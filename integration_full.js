@@ -1,7 +1,7 @@
 import EditorSDK from '@chili-publish/editor-sdk';
 
 let played = false;
-//Initialize SDK
+//Initialize SDK.
 const SDK = new EditorSDK({
     onStateChanged: (state) => {
       onLayoutsChanged(state.layouts, state.selectedLayoutId);
