@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CHILI GrafX integration</title>
+        <link rel="stylesheet" href="assets/styles/reset.css" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    </head>
+    <body>
+        <h1 class="page-title">CHILI GrafX integration</h1>
+        <div class="container">
+            <div class="editor-container" id="chili-editor"></div>
+            <div class="editor-controls">
+                <section class="buttons-container">
+                    <button id= "btnSelectTool" onclick="useSelectTool()">Use selecttool</button>
+                    <button id= "btnZoomTool" onclick="useZoomTool()">Use zoomtool</button>
+                    <button id= "btnHandTool" onclick="useHandTool()">Use handtool</button>
+                    <br />
+                    <span id="toolLabel"></span>
+                    <br />
+                    <br />
+                    <button onclick="playAnimation()">Play animation</button>
+                    <br />
+                    <button onclick="addFrame()">Add Frame</button>
+                    <button onclick="getDocumentState()">Get Document</button>
+                    <button onclick="toggleDebug()">Toggle Debug</button>
+                  </section>
+                  <br />
+                  <br />
+                  <br />
+                  <section class="left-panel">
+                    <article class="frame-content">
+                      <h2>Frame content</h2>
+                      <div class="frame-row">
+                        <label for="frame-title">Frame name:</label>
+                        <input id="frameTitle" name="frame-title" value="" disabled />
+                      </div>
+                      <div class="frame-row">
+                        <label for="frame-type">Frame type:</label>
+                        <input id="frameType" name="frame-type" value="" disabled />
+                      </div>
+                    </article>
+                    <br />
+                    <br />
+                    <article class="frame-layout">
+                      <h2>Frame layout</h2>
+                      <div class="frame-row">
+                        <div>
+                          <label for="frame-x">x:</label>
+                          <input
+                            id="frameX"
+                            name="frame-x"
+                            value=""
+                            type="number"  
+                          />
+                        </div>
+                        <div>
+                          <label for="frame-y">y:</label>
+                          <input
+                            id="frameY"
+                            name="frame-y"
+                            value=""
+                            type="number"                            
+                          />
+                        </div>
+                      </div>
+                      <br />
+                      <div class="frame-row">
+                        <div>
+                          <label for="frame-width">Width:</label>
+                          <input
+                            id="frameWidth"
+                            name="frame-width"
+                            value=""
+                            type="number"                            
+                          />
+                        </div>
+                        <div>
+                          <label for="frame-height">Height:</label>
+                          <input
+                            id="frameHeight"
+                            name="frame-height"
+                            value=""
+                            type="number"                            
+                          />
+                        </div>
+                      </div>
+                    </article>
+                  </section>
+                  <br />
+                  <br />
+                  <br />
+                  <section class="right-panel">
+                    <article class="layout-list">
+                      <h2>Layouts</h2>
+                      <ul id="layoutList">
+                        <!-- layoutList will get populated here -->
+                      </ul>
+                    </article>
+                  </section>
+                  <br />
+                  <section class="right-panel">
+                    <article class="variable-list">
+                      <h2>Variables</h2>
+                      <ul id="variableList">
+                        <!-- variableList will get populated here -->
+                      </ul>
+                    </article>
+                  </section>
+            </div>
+        </div>
+        <script type="module" src="integration.js" type="text/javascript">
+        </script>
+        
+    </body>
+</html>

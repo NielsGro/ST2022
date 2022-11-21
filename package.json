@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "serve" : "npx parcel serve ./index.html"
+  },
+  "dependencies": {
+    "@chili-publish/editor-sdk": "^0.88.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  }
+  
+}
+
